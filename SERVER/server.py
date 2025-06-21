@@ -5,9 +5,10 @@ import io
 import base64
 import os
 
-
 app = Flask(__name__)
-CORS(app)
+
+# Autoriser uniquement les requêtes venant de ton frontend
+CORS(app, resources={r"/api/*": {"origins": "https://qcgdebaby.netlify.app"}})
 
 @app.route("/api", methods=["GET"])
 def recup():
@@ -27,7 +28,6 @@ def recup():
         "mail": mail,
         "lien": lien
     }
-
 
     # Générer QR code
     qr = pyqrcode.create(lien)
