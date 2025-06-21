@@ -74,7 +74,7 @@ const Generator = () => {
   const params = new URLSearchParams(currentData).toString();
 
   try {
-    const response = await axios.get(`http://127.0.0.1:5000/api?${params}`);
+    const response = await axios.get(`https://mon-back-flask.onrender.com/api?${params}`);
     console.log("Réponse du serveur :", response.data);
 
     const redirectUrl = response.data.qr_image_base64;
