@@ -1,4 +1,5 @@
-Flask
+﻿flask
 flask-cors
-psycopg2-binary
-python-dotenv
+pyqrcode
+pypng
+gunicorn
