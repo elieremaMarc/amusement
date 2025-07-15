@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import  {BrowserRouter as Routeur , Routes, Route, useNavigate} from "react-router-dom"
 import Acceuil from "./../pages/Acceuil"
 import Rang from "../pages/Rang"
@@ -56,4 +56,4 @@ function App() {
 }
 
 export default App;
->>>>>>> d5674dc2f2cc6321b0dcf0d78b10936d07aec126
+
